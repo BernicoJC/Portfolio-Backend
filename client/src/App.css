@@ -1,0 +1,280 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+hr{
+  width: 70%;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main_navbar_container{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(35, 77, 131);
+  margin: 1em auto;
+  text-align: center;
+}
+
+#main_navbar{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+
+  color:rgba(255, 255, 255);
+  background-color: rgb(35, 77, 131);
+}
+
+#main_navbar:hover {
+  background-color: rgb(230, 198, 92);
+}
+
+#home_title{
+  padding-bottom: 1em;
+  margin: 1em auto;
+}
+
+#home_body{
+  display:block;
+}
+
+#about_me{
+  width: 60%;
+  background-color: rgb(35, 77, 131);
+  color:white;
+  margin: 1em auto;
+  padding: 1em;
+  
+}
+
+#about_me hr{
+  width: 90%;
+}
+
+#form{
+  width: 60%;
+  margin: 0 auto;
+  
+  background-color: rgb(35, 77, 131);
+  color: white;
+  padding: 1em;
+  text-align: center
+}
+
+#form h2{
+  text-align: center;
+}
+
+form{
+  width: 60%;
+  display: grid;
+  margin: 0 auto; 
+
+  padding: 1em;
+}
+
+label {
+  width: 100%; 
+  text-align: center;
+}
+
+input{
+  width: 100%;
+  margin: 1em 0;
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 1em;
+  border: 0.2em solid transparent;
+
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+
+  margin-top: 1em;
+
+  background-color: rgb(230, 198, 92);
+  color: white;
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #3083ff;
+}
+button:focus,
+button:focus-visible {
+  outline: 1em auto -webkit-focus-ring-color;
+}
+
+#page{
+  padding-bottom: 6em;
+}
+
+#footer {
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+
+  background-color: rgb(35, 77, 131);
+  color: white;
+}
+
+#project_navbar_container{
+  display: flex;
+  justify-content: space-around;
+  width:50%;
+  margin: 1em auto; 
+}
+
+#project_navbar{
+  padding: 1em;
+
+  color:rgba(255, 255, 255);
+  background-color: rgb(35, 77, 131);
+
+  margin: 0 auto;
+  border-radius: 0.5em;
+}
+
+#project_navbar:hover {
+  background-color: rgb(230, 198, 92);
+}
+
+#project{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: rgb(35, 77, 131);
+  color:white;
+
+  padding: 1em 0 1em 0;
+
+  width: 50%;
+  height: 25vh;
+  margin: 1em auto; 
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+#project_titles{
+  width:60%;
+  text-align:left;
+  padding: 0 1em 0 2em;
+}
+
+#project_image{
+  align-items: center; /* Centers vertically */
+  padding: 0 2em 0 0;
+  width: 40%;
+}
+
+#project_image img{
+  width: 60%;
+  object-fit: cover;
+}
+
+#project:hover{
+  background-color: rgb(41, 90, 153);
+}
+
+#popup_modal{
+  background-color: rgb(41, 90, 153);
+  padding: 1em 1em 2em 1em;
+  border-radius: 2em;
+
+  color: rgb(238, 238, 238);
+
+  width: 40vw;
+
+  text-align: center;
+  outline: 1em auto white;
+
+  max-height: 80vh; 
+  overflow-y: auto; 
+}
+
+#popup_modal h3{
+  text-align: justify;
+}
+
+#art_projects_container{
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 60%;
+  margin: 0 auto;
+}
+
+#art_project{
+  background-color: rgb(35, 77, 131);
+  color:white;
+  
+  width: 20em;
+  height: 20em;
+
+  padding: 1em 0.1em 1em 0.1em;
+  margin: 1em auto; 
+  border-radius: 1em;
+  cursor:pointer;
+}
+
+#art_project img{
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+}
+
+#art_popup_modal{
+  flex-direction: column;
+
+  background-color: rgb(41, 90, 153);
+  padding: 1em 1em 2em 1em;
+  border-radius: 2em;
+
+  color: rgb(238, 238, 238);
+
+  width: 40vw;
+
+  text-align: center;
+  outline: 1em auto white;
+}
+
+#popup_modal h3{
+  text-align: justify;
+}
+
+#popup_modal a{
+  color: white;
+}
+
+#popup_modal a:hover{
+  color: blue;
+}
+
+#pdf_container{
+  width: 50%;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+object{
+  width: 100%;
+  height: 100%;
+}
