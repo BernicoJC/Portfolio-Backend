@@ -13,7 +13,7 @@ CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 
 # Create Alchemy instance
-db = SQLAlchemy(app, resources={r"/*": {"origins": "https://bernicojc.com"}})
+db = SQLAlchemy(app)
 
 # Database classes
 class SoftwareProject(db.Model):
@@ -118,5 +118,6 @@ def addFeedback():
 
 # Run
 if __name__ == '__main__':
-    from os import environ
-    app.run(host='0.0.0.0', port=int(environ.get('PORT', 5000)))
+    app.run(debug=True)
+    # from os import environ
+    # app.run(host='0.0.0.0', port=int(environ.get('PORT', 5000)))
