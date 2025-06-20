@@ -1,12 +1,12 @@
 from app import db, app, SoftwareProject
 
 def AddProject():
-    title = "Portfolio Website"
-    subtitle = "This website!"
-    description = "This project is a full stack development of a portfolio website utilizing ReactJS frontend and Python Flask backend. This is where I store my projects and to introduce myself to the world about my skills and what I do. I display my software projects and other development projects. Furthermore, I also display my resume here, and it uses SQLAlchemy for its database on the feedback forms and its projects. From this project, I learned about full stack development of a website from the groundup using ReactJS and Flask (and their API like CORS and how to access between frontend and backend), and polished my SQL skills with a real case scenario using Python SQLite, and my general CSS / JS skills."
-    background = "I decided to make this website to show myself to the world, and what my skills are, so that people can know who I am more easily. Furthermore, I also did this project to hone my website development skills in general. The Github repo for the backend code is below. You can also find the link to the front end repo there."
-    image = "/images/bernico.jpg"
-    link = "https://github.com/BernicoJC/Portfolio-Backend"
+    title = "Go Display It, Canvas!"
+    subtitle = "UCSD Canvas .go File Displayer Web Extension"
+    description = "This personal project is a simple web extension project that's also full of applications of the knowledge I got from my CSE 124: Systems Networking coursework. The extension will detect if the current URL is the UCSD Canvas URL: `*://*.canvas.ucsd.edu/courses/*/files/*` or `*://ucsd.instructure.com/courses/*/files/*`. If the URL matches, and the file displayed is a .go code, it'll find the HTML element that stores a link to the download page. The extension will then fetch the link (sending a HTTP request), following all of the redirections until the file is acquired. It will then get the file's content and make a new div element that will apply PrismJS syntax highlighter. From this project I learned about the usage of CURL and HTTP requests in practice, CDN links, Service Worker and Background Script for Manifest V3, and other general Web Extension skills, especially giving access to the extension."
+    background = "I decided to make this extension when I was studying for my CSE 110 midterm and got annoyed that Canvas couldn't recognize .go file types, unable to display it, and thus I had to keep downloading .go files just to view them. I was only expecting to hone my general frontend skills before making this, and as such it really pleasantly surprised me that I ended up applying the skills I learned from the class I target this extension for."
+    image = "/images/godisplayitcanvas_icon_128.jpg"
+    link = "https://github.com/BernicoJC/GoDisplayItCanvas"
     with app.app_context():
         new_project = SoftwareProject(title=title, subtitle=subtitle, description=description, background=background, image=image, link=link)
         db.session.add(new_project)
