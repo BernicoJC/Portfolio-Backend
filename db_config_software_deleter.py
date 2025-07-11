@@ -6,7 +6,7 @@ def DeleteProject(id):
         project = SoftwareProject.query.get(id)
         db.session.delete(project)
         db.session.commit()
-        print("Project deleted succesfully!")
+        print(f"Project with ID {id} deleted successfully!")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
